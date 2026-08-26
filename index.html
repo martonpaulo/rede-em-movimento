@@ -21,7 +21,7 @@
 <title>Network in Motion</title>
 <style>html,body{margin:0;width:100%;height:100%;overflow:hidden;background:#05080d}canvas{display:block;width:100vw;height:100vh}#audio-panel{position:fixed;left:24px;bottom:24px;display:flex;align-items:center;gap:10px;padding:8px 12px;border:1px solid #b8c6d455;border-radius:999px;background:#0b111acc;color:#edf2f8;font:600 12px Arial,sans-serif;letter-spacing:.03em;backdrop-filter:blur(8px)}#audio-panel button{border:0;background:transparent;color:#edf2f8;font:inherit;cursor:pointer;padding:3px}#audio-panel button:hover{color:#ff9a62}#volume{width:80px;accent-color:#ff5a18;cursor:pointer}</style>
 <canvas id="c" aria-label="Animated network graphic"></canvas>
-<div id="audio-panel" aria-label="Audio controls"><button id="sound" type="button" aria-label="Play ambient sound">▶ Play</button><button id="mute" type="button" aria-label="Mute ambient sound">🔊</button><input id="volume" type="range" min="0" max="1" step=".01" value=".28" aria-label="Volume"></div>
+<div id="audio-panel" aria-label="Audio controls"><button id="sound" type="button" aria-label="Play ambient sound">▶ Play</button><button id="mute" type="button" aria-label="Mute ambient sound">🔊</button><input id="volume" type="range" min="0" max="1" step=".01" value=".55" aria-label="Volume"></div>
 <audio id="music" loop preload="auto" src="space-ambient-mix.mp3"></audio>
 <script>
 const c=document.querySelector('#c'),x=c.getContext('2d'),soundButton=document.querySelector('#sound'),muteButton=document.querySelector('#mute'),volume=document.querySelector('#volume'),music=document.querySelector('#music');let n=[],e=[],t=0,lastAdd=0,lastFrame=0,audioStarted=false;
