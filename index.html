@@ -1,10 +1,23 @@
 <!doctype html>
-<html lang="pt-BR">
+<html lang="en">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Rede em movimento</title>
+<meta name="theme-color" content="#05080d">
+<meta name="description" content="An ambient animated network of light, motion, and connection.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://martonpaulo.github.io/rede-em-movimento/">
+<meta property="og:title" content="Network in Motion">
+<meta property="og:description" content="An ambient animated network of light, motion, and connection.">
+<meta property="og:image" content="https://martonpaulo.github.io/rede-em-movimento/social-card.svg">
+<meta property="og:image:alt" content="A glowing orange and white network on a dark background.">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Network in Motion">
+<meta name="twitter:description" content="An ambient animated network of light, motion, and connection.">
+<meta name="twitter:image" content="https://martonpaulo.github.io/rede-em-movimento/social-card.svg">
+<link rel="icon" type="image/svg+xml" href="logo.svg">
+<title>Network in Motion</title>
 <style>html,body{margin:0;width:100%;height:100%;overflow:hidden;background:#05080d}canvas{display:block;width:100vw;height:100vh}</style>
-<canvas id="c" aria-label="Gráfico de rede animado"></canvas>
+<canvas id="c" aria-label="Animated network graphic"></canvas>
 <script>
 const c=document.querySelector('#c'),x=c.getContext('2d');let n=[],e=[],t=0,lastAdd=0,lastFrame=0,audioStarted=false;
 function startMusic(){if(audioStarted)return;audioStarted=true;let A=new (window.AudioContext||window.webkitAudioContext)();A.resume();let g=A.createGain(),f=A.createBiquadFilter();g.gain.value=.01;f.type='lowpass';f.frequency.value=500;g.connect(f).connect(A.destination);let o=A.createOscillator();o.type='sine';o.frequency.value=220;o.connect(g);o.start()}
