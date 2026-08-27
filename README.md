@@ -16,13 +16,15 @@ happened to it.
 - **Relationships** accumulate. Time spent close counts for or against depending on whether two fit,
   a hard collision is remembered as an offence, and every light settles on a closest friend and a
   rival it steers toward and away from.
+- **Experience changes behaviour.** Each light trains a tiny online model from its own encounters,
+  then approaches people it expects to get along with and avoids those it does not.
 - **Entanglement** pairs the most distant unbound lights. Bound pairs flicker in antiphase and pass
   each other mirrored impulses across the field.
 - **Lives end.** A light ages a year every fourteen seconds, changes personality as it passes
   through its stages, and eventually fades. Its place stays empty a while before someone new arrives
   with a fresh name and history.
 - **The field is read back** as a society every half minute: polarised, fragmented, crowded, feuding,
-  unusually warm.
+  learning, or settling into clusters found by k-means.
 
 ## Using it
 
